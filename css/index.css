@@ -1,0 +1,327 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    max-width: 1780px;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* --------------nav bar------------ */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    text-align: center;
+}
+
+nav  .nav-items {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    font-size: 30px;
+    margin-left: 100px;
+    cursor: pointer;
+    
+}
+
+nav div.nav-items :first-child{
+    font-weight: 700;
+    font-size: 30px;
+    color: #ff0000;
+       
+}
+
+nav img{
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+nav img:last-child{
+    margin-right: -40px;
+    
+}
+
+
+/* -----------------------intro section------------------- */
+div.intro-section
+{
+    display:flex;
+    gap: 100px;
+    height: 80vh;
+}
+
+div.intro-section div.left-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+   
+    gap: 100px;
+    margin-left: 30px;
+    
+}
+
+div.intro-section div.left-section h3{
+    font-size: 40px;
+    font-weight: 300;
+
+}
+
+div.intro-section div.left-section h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 80px;
+    font-weight: 900;
+    margin-top: -80px;
+}
+
+.left-section div.sub-headlines{
+    margin-top: -60px;
+    margin-left: 50px;
+    
+    
+    
+}
+
+.left-section div.sub-headlines h5.sub-headline{
+    font-size: 30px;
+    font-weight: lighter;
+    line-height: 60px;
+   
+    
+}
+
+.left-section div.sub-headlines h5.sub-headline img{
+    position: relative;
+    background-color: #ff0000;
+    padding: 5px;
+    margin-right: 15px;
+    border-radius: 50px;
+    display: inline-block;
+   
+   
+}
+
+
+.left-section p.text{
+    font-size: 19px;
+    margin-top: -50px;
+    line-height: 25px;
+}
+
+.left-section div.action-btns{
+    margin-top: -60px;
+
+}
+
+.left-section div.action-btns button.action-btn{
+    width: 250px;
+    padding: 15px 0;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 25px;
+    border:none;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+
+.left-section div.action-btns :first-child{
+    margin-bottom: 10px;
+    
+}
+
+
+
+
+/* ------------right section-------------- */
+
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headphone-div {
+    position: relative;
+    width: 600px;
+}
+
+
+
+div.headphone-div img.discount{
+    position: absolute;
+    top: 260px;
+    left: -30px;
+    width: 180px;
+    
+}
+
+.headphone-div div.discount-content h4{
+    position: absolute;
+    top: 310px;
+    left:20px;
+    color: #fff;
+    font-size: 20px;
+    
+}
+
+.headphone-div div.discount-content h1{
+    position: absolute;
+    top: 330px;
+    left:28px;
+    color: #fff;
+    
+}
+
+div.headphone-div img:last-child{
+    position: relative;
+    top: -40px;
+    left: 50px;
+    width: 500px;
+    z-index: -1;
+}
+
+.right-section div.dots{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 180px;
+}
+
+.headphone-div div.discount-content h1{
+    font-size: 60px;
+    width: 10px;
+    margin-left: -20px;
+}
+
+.right-section div.dots div.dot{
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.right-section div.dots div.dot.yellow-dot{
+    background-color:#ffff00;
+}
+.right-section div.dots div.dot.tomato-dot{
+    background-color:#ff6347;
+}
+.right-section div.dots div.dot.black-dot{
+    background-color:#000000;
+}
+
+.right-section button.action-btn{
+    padding: 20px 60px;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 25px;
+    border:none;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* ---------------media query------------ */
+
+@media only screen and (max-width: 790px) {
+    
+
+    nav{
+        overflow-x: auto;
+    }
+
+    
+    div.intro-section
+{
+    display:flex;
+    flex-direction: column;
+    gap: 100px;
+    height: 80vh;
+}
+
+
+    div.intro-section div.left-section h3{
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: 20px;
+        align-self: center;
+    }
+
+    div.intro-section div.left-section h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 50px;
+        font-weight: 900;
+        margin-top: -80px;
+        align-self: center;
+    }
+
+    .left-section div.sub-headlines{
+        margin-top: -60px;
+        margin-left: 50px;
+        align-self: center;
+    }
+    
+    .left-section div.sub-headlines h5.sub-headline{
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 40px;
+        
+          
+    }
+    
+    .left-section div.sub-headlines h5.sub-headline img{
+        position: relative;
+        background-color: #ff0000;
+        padding: 5px;
+        margin-right: 15px;
+        border-radius: 50px;
+        display: inline-block;
+       
+       
+    }
+
+    .left-section div.action-btns{
+       align-self: center;
+
+    }
+    /* -------------right section------------ */
+
+    div.headphone-div img.discount{
+        position: absolute;
+        top: 260px;
+        left: 10px;
+        width: 120px;
+        
+    } 
+
+    .headphone-div div.discount-content h4{
+        position: absolute;
+        top: 290px;
+        left:35px;
+        color: #fff;
+        font-size: 15px;
+        
+    }
+    
+    .headphone-div div.discount-content h1{
+        position: absolute;
+        top: 310px;
+        left:60px;
+        color: #fff;
+        font-size: 30px;
+    }
+    
+
+}
