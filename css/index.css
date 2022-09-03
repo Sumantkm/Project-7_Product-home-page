@@ -20,12 +20,15 @@ nav{
     height: 20vh;
     text-align: center;
 }
+nav :first-child{
+    width: 120px;
+}
 
 nav  .nav-items {
     display: flex;
     flex-direction: row;
-    gap: 70px;
-    font-size: 30px;
+    gap: 60px;
+    font-size: 20px;
     margin-left: 100px;
     cursor: pointer;
     
@@ -33,7 +36,7 @@ nav  .nav-items {
 
 nav div.nav-items :first-child{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
     color: #ff0000;
        
 }
@@ -41,6 +44,7 @@ nav div.nav-items :first-child{
 nav img{
     margin-left: 50px;
     cursor: pointer;
+
 }
 
 nav img:last-child{
@@ -53,8 +57,8 @@ nav img:last-child{
 div.intro-section
 {
     display:flex;
-    gap: 100px;
     height: 80vh;
+    gap: 30px;
 }
 
 div.intro-section div.left-section{
@@ -62,23 +66,23 @@ div.intro-section div.left-section{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-   
-    gap: 100px;
+    gap: 80px;
     margin-left: 30px;
     
 }
 
 div.intro-section div.left-section h3{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 300;
 
 }
 
 div.intro-section div.left-section h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 80px;
-    font-weight: 900;
+    font-size: 60px;
+    font-weight: 800;
     margin-top: -80px;
+    
 }
 
 .left-section div.sub-headlines{
@@ -90,7 +94,7 @@ div.intro-section div.left-section h1{
 }
 
 .left-section div.sub-headlines h5.sub-headline{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: lighter;
     line-height: 60px;
    
@@ -100,8 +104,8 @@ div.intro-section div.left-section h1{
 .left-section div.sub-headlines h5.sub-headline img{
     position: relative;
     background-color: #ff0000;
-    padding: 5px;
-    margin-right: 15px;
+    padding: 3px;
+    margin-right: 10px;
     border-radius: 50px;
     display: inline-block;
    
@@ -110,9 +114,9 @@ div.intro-section div.left-section h1{
 
 
 .left-section p.text{
-    font-size: 19px;
-    margin-top: -50px;
-    line-height: 25px;
+    font-size: 12px;
+    margin-top: -60px;
+    line-height: 20px;
 }
 
 .left-section div.action-btns{
@@ -121,11 +125,11 @@ div.intro-section div.left-section h1{
 }
 
 .left-section div.action-btns button.action-btn{
-    width: 250px;
+    width: 220px;
     padding: 15px 0;
     background-color: #ff0000;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     border:none;
     border-radius: 30px;
     cursor: pointer;
@@ -147,66 +151,63 @@ div.intro-section div.left-section h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 .headphone-div {
     position: relative;
     width: 600px;
+    margin-top: -30px;
 }
 
 
 
 div.headphone-div img.discount{
     position: absolute;
-    top: 260px;
-    left: -30px;
-    width: 180px;
-    
+    top: 250px;
+    left: 10px;
+    width: 110px;
 }
 
 .headphone-div div.discount-content h4{
     position: absolute;
-    top: 310px;
-    left:20px;
+    top: 280px;
+    left:30px;
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     
 }
 
 .headphone-div div.discount-content h1{
     position: absolute;
-    top: 330px;
-    left:28px;
+    top: 300px;
+    left: 30px;
     color: #fff;
+    font-size: 35px;
     
 }
 
 div.headphone-div img:last-child{
     position: relative;
-    top: -40px;
+    top: 0;
     left: 50px;
-    width: 500px;
+    width: 400px;
     z-index: -1;
 }
 
 .right-section div.dots{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: row;
-    width: 180px;
+    gap: 30px;
+    margin-left: -100px;
 }
 
-.headphone-div div.discount-content h1{
-    font-size: 60px;
-    width: 10px;
-    margin-left: -20px;
-}
 
 .right-section div.dots div.dot{
-    
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 100px;
     cursor: pointer;
 }
@@ -222,15 +223,17 @@ div.headphone-div img:last-child{
 }
 
 .right-section button.action-btn{
-    padding: 20px 60px;
+    align-self: center;
+    width: 220px;
+    padding: 15px 0;
     background-color: #ff0000;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     border:none;
     border-radius: 30px;
-    margin-top: 30px;
-    margin-left: 10px;
     cursor: pointer;
+    margin-top: 20px;
+    margin-left: -100px;
 }
 
 /* ---------------media query------------ */
@@ -297,6 +300,9 @@ div.headphone-div img:last-child{
 
     }
     /* -------------right section------------ */
+    .right-section {
+       margin-left: 100px;
+    }
 
     div.headphone-div img.discount{
         position: absolute;
@@ -318,7 +324,7 @@ div.headphone-div img:last-child{
     .headphone-div div.discount-content h1{
         position: absolute;
         top: 310px;
-        left:60px;
+        left:40px;
         color: #fff;
         font-size: 30px;
     }
