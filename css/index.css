@@ -151,7 +151,6 @@ div.intro-section div.left-section h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
 }
 
 .headphone-div {
@@ -232,7 +231,7 @@ div.headphone-div img:last-child{
     border:none;
     border-radius: 30px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: -100px;
 }
 
